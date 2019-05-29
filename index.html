@@ -1,1 +1,74 @@
-<h1>周先生个人IT技术分享站</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>404</title>
+</head>
+<style>
+*, :after, :before {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    height:100%;
+    font-size:.373333rem;
+}
+body{
+    height:100%;
+    padding:0;
+    margin:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f4f4f4;
+}
+.error-wrapper{
+    text-align:center;
+    font-size:.373333rem;
+}
+.error-wrapper .icon{
+    width: 4.266667rem;
+    height: 4.266667rem;
+    margin: 0 auto;
+}
+.error-wrapper .txt{
+    margin-top: .613333rem;
+    color: #6b6b6b;
+}
+.error-wrapper .btn{
+    display: inline-block;
+    width: 3.173333rem;
+    height: .96rem;
+    line-height: 1rem;
+    background: #d8b49d;
+    border-radius: .106667rem;
+    margin-top: .773333rem;
+    color: #fff;
+    text-decoration: none;
+}
+</style>
+<body>
+    <div class="error-wrapper">
+        <img alt="" class="icon" src="https://img.allpyra.com/img5fd936a70bab4064abf630c1e78527e5.png" />
+        <p class="txt">/(ㄒoㄒ)/~~周先生的页面被蔡小姐赌气跑丢了~</p>
+        <a href="/" class="btn">返回主页</a>
+    </div>
+    <script>
+        //获取屏幕宽度(viewport)
+        let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        htmlWidth = htmlWidth>540?540:htmlWidth;
+        //获取html的dom
+        let htmlDom = document.getElementsByTagName('html')[0];
+        //设置html的fontSize
+        htmlDom.style.fontSize = htmlWidth/10+'px';
+        window.addEventListener('resize',(e)=>{
+        　　let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+            htmlWidth = htmlWidth>540?540:htmlWidth;
+        　　htmlDom.style.fontSize = htmlWidth/10+'px';
+        });
+    </script>
+</body>
+</html>
